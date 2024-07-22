@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['email'])) {
-    header("Location: logsign.php", true, 301);
+    header("Location: index.html", true, 301);
 }
 ?>
 
@@ -96,7 +96,7 @@ if (!isset($_SESSION['email'])) {
       
   
     <p>
-  		Not yet registered? <a href="logsign.php">Register here!</a>
+  		Not yet registered? <a href="signregister.php">Register here!</a>
   	</p>
     </div>
   </div>

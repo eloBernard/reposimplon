@@ -1,0 +1,3 @@
+[submodule "elodevops-pfe"]
+  path = elodevops-pfe
+  url = https://github.com/eloBernard/reposimplon.git

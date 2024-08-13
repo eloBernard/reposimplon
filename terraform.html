@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #ddd;
+        }
+        h1, p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is an example of <code>main.tf</code>:</p>
+    <pre>
+<code># Basic Terraform configuration
+
+provider "local" {
+  # This provider does nothing, it's just an example
+}
+
+resource "null_resource" "example" {
+  provisioner "local-exec" {
+    command = "echo Hello, World!"
+  }
+}</code>
+    </pre>
+</body>
+</html>
